@@ -39,11 +39,11 @@ console.log("Risultato sottrazione", risultato);
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-let totalShoppingCart;
-totalShoppingCart = 10;
-if (totalShoppingCart === 50) {
-  console.log("Spedizione gratuita");
-}
+// let totalShoppingCart;
+// totalShoppingCart = 10;
+// if (totalShoppingCart === 50) {
+//   console.log("Spedizione gratuita");
+// }
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -76,14 +76,14 @@ console.log("Verifica valore", typeof valore);
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
 */
-let val = 7;
-if (val < 10) {
-  console.log("Meno di 10");
-} else if (val < 5) {
-  console.log("Meno di 5");
-} else {
-  console.log("Uguale a 10 o maggiore");
-}
+// let val = 7;
+// if (val < 10) {
+//   console.log("Meno di 10");
+// } else if (val < 5) {
+//   console.log("Meno di 5");
+// } else {
+//   console.log("Uguale a 10 o maggiore");
+// }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -111,19 +111,23 @@ console.log("Lista proprioetà", me);
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-// skills.pop();
-// console.log(skills);
+me.skills.pop();
+console.log(me);
 
-/* ESERCIZIO 14
+/* ESERCIZIO 14 ok
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 const arrayVuoto = [];
 arrayVuoto.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-console.log([arrayVuoto]);
+console.log(arrayVuoto);
+console.log(arrayVuoto[9]);
 
-/* ESERCIZIO 15
+/* ESERCIZIO 15 ok
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+arrayVuoto.pop();
+arrayVuoto.push(100);
+console.log(arrayVuoto);
+console.log(arrayVuoto[9]);
