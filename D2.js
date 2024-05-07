@@ -1,20 +1,21 @@
-/* ESERCIZIO 1
+/* ESERCIZIO 1 ok
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-const numeri = [ 10, 20,];
-console.log(Math.max(...numeri))
+const numeri = [10, 20];
+console.log(Math.max(...numeri));
 
-/* ESERCIZIO 2
+/* ESERCIZIO 2 ok
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-const number3 = 3
-if (number3<5)
-  console.log("not equal",)
-if (number3>5)
-  console.log("not equal",)
-
+const number3 = 3;
+if (number3 < 5) {
+  console.log("not equal");
+}
+if (number3 > 5) {
+  console.log("not equal");
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
@@ -22,12 +23,15 @@ if (number3>5)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 4
+/* ESERCIZIO 4 ok
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+const numero8 = 8;
+const numero16 = 16;
+console.log(numero8);
+const risultato = numero16 - numero8;
+console.log("Risultato sottrazione", risultato);
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -35,7 +39,11 @@ if (number3>5)
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart;
+totalShoppingCart = 10;
+if (totalShoppingCart === 50) {
+  console.log("Spedizione gratuita");
+}
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -52,11 +60,12 @@ if (number3>5)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 8
+/* ESERCIZIO 8 ok
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let valore = "casa";
+console.log("Verifica valore", typeof valore);
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
@@ -66,47 +75,52 @@ if (number3>5)
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
-      console.log("Uguale a 10 o maggiore");
-    }
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
-
-/* ESERCIZIO 11
-  Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
-*/
-
-const me = {
-  name: 'John',
-  lastName: 'Doe',
-  skills: ['javascript', 'html', 'css'],
+let val = 7;
+if (val < 10) {
+  console.log("Meno di 10");
+} else if (val < 5) {
+  console.log("Meno di 5");
+} else {
+  console.log("Uguale a 10 o maggiore");
 }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 12
+/* ESERCIZIO 11 ok
+  Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
+*/
+
+const me = {
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
+};
+
+me.city = "Toronto";
+console.log("Lista proprioetà", me);
+
+/* ESERCIZIO 12 ok
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName;
+console.log("Lista proprioetà", me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+// skills.pop();
+// console.log(skills);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const arrayVuoto = [];
+arrayVuoto.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+console.log([arrayVuoto]);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
