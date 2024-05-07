@@ -17,11 +17,16 @@ if (number3 > 5) {
   console.log("not equal");
 }
 
-/* ESERCIZIO 3
+/* ESERCIZIO 3 ok
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const numero1 = 10;
+if (numero1 % 5 === 0) {
+  console.log("Divisibile per 5");
+} else {
+  console.log("Non è divisibile per 5");
+}
 
 /* ESERCIZIO 4 ok
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
@@ -39,11 +44,11 @@ console.log("Risultato sottrazione", risultato);
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-// let totalShoppingCart;
-// totalShoppingCart = 10;
-// if (totalShoppingCart === 50) {
-//   console.log("Spedizione gratuita");
-// }
+let totalShoppingCart = 40;
+let shippingCost = 10;
+if (totalShoppingCart >= 50) {
+  console.log("Totale", totalShoppingCart, "Spedizione gratuita");
+} else if (totalShoppingCart < 50) console.log("Totale", totalShoppingCart + shippingCost, "Aggiunte le spese di Spedizione");
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
