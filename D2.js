@@ -42,7 +42,7 @@ console.log(numero8);
 const risultato = numero16 - numero8;
 console.log("Risultato sottrazione", risultato);
 
-/* ESERCIZIO 5
+/* ESERCIZIO 5 ok
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
@@ -61,14 +61,23 @@ if (totalShoppingCart >= 50) {
 // }
 // console.log("Totale da pagare", totalAmount);
 
-/* ESERCIZIO 6
+/* ESERCIZIO 6 ok
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
 let isBlackFriday = true;
+if (isBlackFriday === true) {
+  console.log("Applico il 20% di sconto", totalShoppingCart * 0.8);
+} else if (isBlackFriday === false) {
+  if (totalShoppingCart >= 50) {
+    console.log("Totale", totalShoppingCart, "Spedizione gratuita");
+  } else if (totalShoppingCart < 50) {
+    console.log("Totale", totalShoppingCart + shippingCost, "Spese di spedizione aggiute");
+  }
+}
 
-/* ESERCIZIO 7
+/* ESERCIZIO 7 ok
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
@@ -77,6 +86,28 @@ let isBlackFriday = true;
 const x = 10;
 const y = 30;
 const z = 20;
+
+if (x >= y) {
+  if (z >= x) {
+    console.log(z, x, y);
+  } else {
+    if (z >= y) {
+      console.log(x, z, y);
+    } else {
+      console.log(x, y, z);
+    }
+  }
+} else {
+  if (z >= y) {
+    console.log(z, y, x);
+  } else {
+    if (z >= x) {
+      console.log(y, z, x);
+    } else {
+      console.log(y, x, z);
+    }
+  }
+}
 
 /* ESERCIZIO 8 ok
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -108,8 +139,6 @@ if (val < 5) {
 } else {
   console.log("Uguale a 10 o maggiore");
 }
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 11 ok
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
